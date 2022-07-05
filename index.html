@@ -7,6 +7,8 @@
     <meta property="og:title" content="이누가미 코로네 - 프로필 링크">
     <meta property="og:description" content="홀로라이브 게이머즈">
     <meta property="og:image" content="korone.jpg">
+	<link rel="shortcut icon" href="http://koronesuki2.github.io/koronepage/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="http://koronesuki2.github.io/koronepage/favicon.ico" type="image/x-icon" />
     <title>코로네 - 프로필 링크</title>
     <style>
 		@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
@@ -43,11 +45,6 @@
 			margin-bottom: 30px;
 		}
 		.wrap {
-			<!--
-			백그라운드 컬러는 가운데 공간을 얼마나 차지하는지 보기 위해서 쓰였고
-			완성단계에서는 필요하지 않아서 지워진다.
-			-->
-			background-color: yellow;
 			width: 300px;
 			margin: 30px auto 0px auto;
 			
@@ -80,6 +77,7 @@
 		}
 		.wrap > a:hover {
 			background-color: #f2f2f2;
+		}
     </style>
 </head>
 <body>
@@ -87,59 +85,11 @@
 		<div class="profile"></div>
 		<h1 class="main">이누가미 코로네</h1>
 		<P class="sub">홀로라이브 게이머즈</P>
-		<a target="_blank" href="https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q">유튜브</a>
-		<a target="_blank" href="https://twitter.com/inugamikorone">트위터</a>
-		<a target="_blank" href="https://www.youtube.com/watch?v=wLNTAMY1NZA">오리지널 곡</a>
-		<a target="_blank" href="https://namu.wiki/w/%EC%9D%B4%EB%88%84%EA%B0%80%EB%AF%B8%20%EC%BD%94%EB%A1%9C%EB%84%A4">나무위키</a>
+		<a target="_blank" href="https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q"><font color="red">유튜브</font></a>
+		<a target="_blank" href="https://twitter.com/inugamikorone"><font color="#00bfff">트위터</font></a>
+		<a target="_blank" href="https://www.youtube.com/watch?v=wLNTAMY1NZA"><font color="red">오리지널 곡</font></a>
+		<a target="_blank" href="https://namu.wiki/w/%EC%9D%B4%EB%88%84%EA%B0%80%EB%AF%B8%20%EC%BD%94%EB%A1%9C%EB%84%A4"><font color="#32cd32">나무위키</font></a>
 	</div>
 
 </body>
 </html>
-<!--
-margin 이라는 애는 가운데로 모으기 위해서 사용한다.
-이것은 시계방향으로 돈다. 위 → 오른쪽 → 아래 → 왼쪽이다.
-그래서 wrap에서 쓰인 30px auto 0px auto 을 해석하면
-위는 30을 띄우고 양옆은 자동으로 밑에는 0으로 가운데로 위치시킬 수 있다.
-하지만 안 쪽의 내용물을 가운데로 정렬하는 것은 또 다른 이야기이다.
-
-내용물 안에서 가운데 정렬은 display: flex;를 사용한다. 
-거의 column과 low만 바꿔서 사용한다고 한다.
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			이렇게 세트로 다닌다.
-
-main과 sub의 글자 간격을 조절하는데는 다시 margin이 사용된다.
-margin-top: px;
-margin-bottom: px;
-F12 개발자 모드로 글자를 보면 각각의 보이지 않는 박스로 간격이 벌어진 것으 볼 수 있는데
-sub top을 0px로 해결한 것을 알 수 있다.
-
-<style>태그 안에서 .wrap > a 처럼
-오른쪽 화살괄호(>)로 표기하면
-"wrap으로 이름붙인 div안에 모든 a 태그에 적용해" 라는 뜻이 된다.
-ex).wrap > a
-
-text-decoration: none;
-a 태그에 자동으로 들어간다. 이걸 비활성화 하지 않으면
-확인했던 링크에 밑줄표시가 생긴다.
-
-hover
-마우스를 올리면 어떻게 되냐를 설정할 수 있다.
-백그라운드 컬러와 사이즈를 설정하면 마우스가 위치에 도달하면 색이 변한다.
-ex).wrap > a:hover {
-		background-color: #f2f2f2;
-		font-size: 20px;
-}
-
-box-shadow: 3px 3px 5px 0px black;
-오른쪽px 밑px 꼬리의 길이px 꼬리의 선명도px
-
-폰트인데 
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-* {
-    font-family: "Pretendard",serif;
-}
-
--->
